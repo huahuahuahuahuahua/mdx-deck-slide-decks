@@ -1,0 +1,167 @@
+import {
+  CodeSurfer,
+  CodeSurferColumns,
+  Step,
+} from "code-surfer";
+import { nightOwl } from "@code-surfer/themes";
+
+export const theme = nightOwl;
+
+<Head>
+  <title>React Hooks Intro</title>
+</Head>
+
+# Hello, _world_!
+
+---
+
+<CodeSurfer theme={nightOwl}>
+
+```js title="" subtitle=""
+function lorem() {
+  console.log("isok");
+}
+```
+
+```js title="" subtitle=""
+function love() {
+  console.log("isok");
+  console.log("love you");
+}
+```
+
+</CodeSurfer>
+
+---
+
+<CodeSurfer>
+
+```js showNumbers
+console.log(1);
+console.log(2);
+console.log(3);
+```
+
+```js
+console.log(1);
+console.log(2);
+console.log(4);
+```
+
+</CodeSurfer>
+
+---
+
+<CodeSurfer>
+
+```js
+console.log(1);
+console.log(2);
+console.log(3);
+```
+
+```diff 1 subtitle="log 1"
+
+```
+
+```diff 2 subtitle="log 2"
+
+```
+
+```diff 3 subtitle="log 3"
+
+```
+
+</CodeSurfer>
+
+---
+
+<CodeSurferColumns theme={[nightOwl,nightOwl]}>
+
+<Step>
+
+```js
+const data = "data";
+```
+
+</Step>
+
+<Step>
+
+```js
+const lorem = (ipsum, dolor, sit) => {
+  const amet = dolor - ipsum;
+  return consectetur.adipiscing(
+    {
+      elit: sed.eiusmod(sit - dolor) / amet + 2,
+    },
+    (tempor, incididunt) => ipsum + amet * incididunt
+  );
+};
+```
+
+</Step>
+
+</CodeSurferColumns>
+
+---
+
+<CodeSurferColumns>
+<Step subtitle="First Step">
+
+```js
+console.log(1);
+console.log(2);
+```
+
+```js
+console.log("a");
+console.log("b");
+```
+
+</Step>
+<Step subtitle="Second Step">
+
+```js 2
+console.log(1);
+console.log(2);
+```
+
+```js 2
+console.log("a");
+console.log("b");
+```
+
+</Step>
+</CodeSurferColumns>
+
+---
+
+<CodeSurferColumns>
+<Step>
+
+```js
+console.log(1);
+console.log(2);
+```
+
+```js 1
+console.log(1);
+console.log(2);
+```
+
+</Step>
+<Step>
+
+```js 2
+console.log(1);
+console.log(2);
+```
+
+</Step>
+</CodeSurferColumns>
+
+---
+
+docs:  
+[none]
