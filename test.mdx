@@ -1,0 +1,108 @@
+import { Image, Notes, Head } from "mdx-deck";
+import { CodeSurferColumns, Step } from "code-surfer";
+import {
+  vsDark as classTheme,
+  nightOwl as hooksTheme,
+  shadesOfPurple,
+  oceanicNext,
+} from "@code-surfer/themes";
+import GreetingLoader from "./src/greeting-loader";
+import onemorething from "./onemorething.jpg";
+import customTheme from "./custom-theme";
+import TestMd from "./test1.mdx";
+export const theme = hooksTheme;
+
+<Head>
+  <title>React Hooks Intro</title>
+</Head>
+
+This is a copy of [Dan's hooks demo](https://youtu.be/dpw9EHDh2bM?t=1051) from React Conf
+
+I built it to test [Code Surfer v3](https://codesurfer.pomb.us/)
+
+---
+
+<Image src="https://s3.amazonaws.com/jxnblk/mdx-deck.gif" />
+
+---
+
+<TestMd />
+
+---
+
+<CodeSurferColumns>
+<Step>
+
+```js
+console.log(1);
+console.log(2);
+```
+
+<TestMd />
+
+</Step>
+</CodeSurferColumns>
+
+---
+
+Follow [this](https://zeit.co/docs/v2/deployments/official-builders/mdx-deck-now-mdx-deck/)!
+
+---
+
+`notes This sentence can only be seen in presenter mode. `
+
+---
+
+<CodeSurfer theme={hooksTheme}>
+
+```js 2
+function lorem() {
+  console.log("isok");
+}
+```
+
+```js title="" subtitle=""
+function love() {
+  console.log("isok");
+  console.log("love you");
+}
+```
+
+</CodeSurfer>
+
+---
+
+<CodeSurferColumns >
+
+<Step subtitle="Here is a simple React component">
+
+<GreetingLoader />
+
+```jsx file=./src/greeting.1.1.js
+
+```
+
+</Step>
+
+<Step subtitle="Here is a simple React component">
+
+<Image src={onemorething} />
+
+- option 1
+- option 1
+- option 1
+
+</Step>
+
+</CodeSurferColumns>
+
+---
+
+<Split>
+
+![](https://media.giphy.com/media/1CrejqXxVZs9q/giphy.gif)
+
+- Otter Elevates
+- For The 🏀 Dunk
+
+</Split>
