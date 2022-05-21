@@ -2,7 +2,7 @@
   "private": true,
   "version": "0.0.1",
   "scripts": {
-    "start": "mdx-deck test2.mdx",
+    "start": "mdx-deck deck.mdx",
     "text": "mdx-deck text.mdx",
     "test": "mdx-deck test.mdx",
     "build": "mdx-deck build text.mdx"
