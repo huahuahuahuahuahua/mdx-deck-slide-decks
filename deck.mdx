@@ -1,6 +1,10 @@
 import { Head } from "mdx-deck";
 import { future, highlight, prism } from "@mdx-deck/themes";
-import { CodeSurfer } from "code-surfer";
+import {
+  CodeSurfer,
+  CodeSurferColumns,
+  Step,
+} from "code-surfer";
 export const themes = [future, prism];
 <Head>
   <title>mdx-deck</title>
@@ -116,3 +120,53 @@ function incididunt(ipsum, ut = 1) {
 ```
 
 </CodeSurfer>
+
+---
+
+<CodeSurferColumns>
+
+<Step>
+
+```js
+const magna = (aliqua) => aliqua.ut((enim, ad) => enim, 0);
+```
+
+```js
+const minim = (ad, enim) => dolore.magna(ad / enim);
+```
+
+</Step>
+
+<Step>
+
+```js
+const lorem = (ipsum, dolor, sit) => {
+  const amet = dolor - ipsum;
+  return consectetur.adipiscing(
+    {
+      elit: sed.eiusmod(sit - dolor) / amet + 2,
+    },
+    (tempor, incididunt) => ipsum + amet * incididunt
+  );
+};
+
+const magna = (aliqua) => aliqua.ut((enim, ad) => enim, 0);
+```
+
+```js
+const minim = (ad, enim) => dolore.magna(ad / enim);
+
+const sed = (eiusmod, tempor, incididunt) => {
+  const ut = tempor - eiusmod;
+  return labore.et(
+    {
+      amet: dolore.magna(incididunt - tempor) / ut + 2,
+    },
+    (aliqua, elit) => eiusmod + ut * elit
+  );
+};
+```
+
+</Step>
+
+</CodeSurferColumns>
