@@ -1,3 +1,5 @@
+import FiberReconciler from "./image/fiberReconciler.gif";
+import StackReconciler from "./image/stackReconciler.gif";
 import { Head } from "mdx-deck";
 import { future, highlight, prism } from "@mdx-deck/themes";
 import {
@@ -5,7 +7,8 @@ import {
   CodeSurferColumns,
   Step,
 } from "code-surfer";
-export const themes = [future, prism];
+import { github, vsDark } from "@code-surfer/themes";
+export const themes = [vsDark, github];
 <Head>
   <title>mdx-deck</title>
 </Head>;
@@ -170,3 +173,16 @@ const sed = (eiusmod, tempor, incididunt) => {
 </Step>
 
 </CodeSurferColumns>
+
+---
+
+<Split>
+  <>
+    15 Stack reconciler
+    <img style={{ width: "600px" }} src={StackReconciler} />
+  </>
+  <>
+    16 Fiber reconciler
+    <img style={{ width: "600px" }} src={FiberReconciler} />
+  </>
+</Split>
